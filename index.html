@@ -42,6 +42,9 @@ h1{
 img {
     max-width: 300px;
 }
+#top ul li {
+    display: inline-block;
+}
 </style>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1170681-2"></script>
@@ -69,15 +72,20 @@ img {
     <source src="audio/sonohoka.mp3" type="audio/mp3">
 </audio>
 <audio id="sound-3" preload="auto">
+    <source src="audio/sonohoka.mp3" type="audio/mp3">
+</audio>
+<audio id="sound-4" preload="auto">
     <source src="audio/test.mp3" type="audio/mp3">
 </audio>
-<div class="wrap">
-<h1>下記のボタンをクリックしてお待ちください&nbsp;</h1>
-<div id="btn01"><img src="300px.png" onclick="soundbell(1)" alt="配達"></div>
-<div id="btn02"><img src="300px.png" onclick="soundbell(2)" alt="その他"></div>
-<div id="btn03"><img src="300px.png" onclick="soundbell(3)" alt="テスト"></div>
-<div id="btn04"><img src="300px.png" onclick="soundbell(3)" alt="テスト"></div>
 
+<div class="wrap">
+<h1>ご用件のボタンを押してお待ちください</h1>
+<ul>
+<li id="btn01"><img src="300px.png" onclick="soundbell(1)" alt="ご訪問 営業あて"></li>
+<li id="btn02"><img src="300px.png" onclick="soundbell(2)" alt="ご訪問 サポートあて"></li>
+<li id="btn03"><img src="300px.png" onclick="soundbell(3)" alt="その他の方 総合受付"></li>
+<li id="btn04"><img src="300px.png" onclick="soundbell(3)" alt="配達"></li>
+</ul>
 </div>
 </body>
 </html>
