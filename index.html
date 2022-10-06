@@ -5,7 +5,16 @@
 <title>受付</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'ypb5frw',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
 <script src="../common/js/jquery-1.11.0.min.js"></script>
 <script>
 function soundbell(n)
@@ -30,9 +39,10 @@ body{
     background-color: #F5F5F5;
 }
 h1{
-    font-weight: bold;
+    font-family: source-han-sans-japanese,sans-serif;
+    font-weight: 700;
     font-size: 20px;
-    color: #2B362A;
+    color: #393939;
     max-width: none;
 }
 .wrap{
@@ -66,25 +76,25 @@ img {
 
 <body id="top">
 <audio id="sound-1" preload="auto">
-    <source src="audio/haitatsu.mp3" type="audio/mp3">
+    <source src="audio/eigyou.mp3" type="audio/mp3">
 </audio>
 <audio id="sound-2" preload="auto">
-    <source src="audio/sonohoka.mp3" type="audio/mp3">
+    <source src="audio/support.mp3" type="audio/mp3">
 </audio>
 <audio id="sound-3" preload="auto">
     <source src="audio/sonohoka.mp3" type="audio/mp3">
 </audio>
 <audio id="sound-4" preload="auto">
-    <source src="audio/test.mp3" type="audio/mp3">
+    <source src="audio/haitatsu.mp3" type="audio/mp3">
 </audio>
 
 <div class="wrap">
 <h1>ご用件のボタンを押してお待ちください</h1>
 <ul>
-<li id="btn01"><img src="300px.png" onclick="soundbell(1)" alt="ご訪問 営業あて"></li>
-<li id="btn02"><img src="300px.png" onclick="soundbell(2)" alt="ご訪問 サポートあて"></li>
-<li id="btn03"><img src="300px.png" onclick="soundbell(3)" alt="その他の方 総合受付"></li>
-<li id="btn04"><img src="300px.png" onclick="soundbell(3)" alt="配達"></li>
+<li id="btn01"><img src="image/1eigyou.png" onclick="soundbell(1)" alt="ご訪問 営業あて"></li>
+<li id="btn02"><img src="image/2support.png" onclick="soundbell(2)" alt="ご訪問 サポートあて"></li>
+<li id="btn03"><img src="image/3sonohoka.png" onclick="soundbell(3)" alt="その他の方 総合受付"></li>
+<li id="btn04"><img src="image/4haitatsu.png" onclick="soundbell(3)" alt="配達"></li>
 </ul>
 </div>
 </body>
