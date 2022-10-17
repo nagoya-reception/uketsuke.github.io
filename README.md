@@ -3,3 +3,4 @@
 
 ＜参考URL＞<br>
 <a href="https://ondoku3.com/ja/">音声読み上げソフト　音読さん</a>
+<a href="https://www.tagindex.com/javascript/window/interval2.html">一定時間後にサブウィンドウを閉じる</a>
